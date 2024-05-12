@@ -1,10 +1,8 @@
 body {
-  font-family: 'Montserrat','Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: #darkcyan;
   background-color: #lightyellow;
 }
-
-
 
 .background-color-paragraph {
   background-color: #red; /* Set the background color */
@@ -206,7 +204,6 @@ a:focus {
   background-size: 55px;
 }
 
-
 /*end header section*/
 .slider_section {
   -webkit-box-flex: 1;
@@ -249,7 +246,6 @@ a:focus {
 .slider_section .detail-box h2 {
   font-size: 2.5rem;
 }
-
 
 .slider_section .detail-box h1 {
   font-size: 3.5rem;
@@ -306,42 +302,36 @@ a:focus {
 .about_section {
   background-image: url(../images/us-bg.jpg);
   background-size: cover;
-  background-position: center;
-  height: 1000px;
   background-attachment: fixed;
-  color: #BEBD7F; /* Changed text color to white for better visibility */
+  color: #fff; /* Changed text color to white for better visibility */
   text-align: center;
 }
 
-#typewriter {
-  font-family: 'Helvetica','Montserrat'; /* Change the font family */
-}
-
-#typewriter .storyteller {
-  color: #8B0000; /* Deep Blue */
-}
-
-#typewriter .physics {
-  color: #006400; /* Dark Green */
-}
-
-#typewriter .explorer {
-  color: #B22222; /* Fire Brick */
-}
-
 .about_section h2 {
-  font-family: 'Montserrat','Helvetica';
   font-weight: bold;
-  color: #BEBD7F; /* Change to your desired color */
-  font-size: 30px; /* Adjust the font size as needed */
-  margin-top: 20px; /* Add margin for spacing */
+  margin-top: 30px; /* Added margin for better spacing */
 }
 
-/* Style for the download buttons */
+.about_section p {
+  margin-top: 20px; /* Adjusted margin for better spacing */
+}
+
+.detail-box {
+  padding: 40px; /* Adjusted padding for better spacing */
+  background-color: rgba(0, 0, 0, 0.7); /* Adjusted background color with opacity for better readability */
+  border-radius: 10px;
+  margin-top: 30px; /* Added margin for better spacing */
+}
+
+.btn-box {
+  margin-top: 20px; /* Adjusted margin for better spacing */
+}
+
+/* Button styles */
 .btn-box a {
   display: inline-block;
-  background-color: ##BEBD7F; /* Change to your desired color */
-  color:#BEBD7F ;
+  background-color: #darkgoldenrod; /* Blue color */
+  color: #fff;
   text-decoration: none;
   padding: 10px 20px;
   border-radius: 5px;
@@ -349,10 +339,11 @@ a:focus {
 }
 
 .btn-box a:hover {
-  background-color: #BEBD7F; /* Change to a darker shade on hover if desired */
+  background-color: #darkgoldenrod; /* Darker blue color on hover */
 }
+ 
 
- /*Project Section*/
+
 
 
 .projects_section {
@@ -367,7 +358,7 @@ a:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
@@ -391,6 +382,19 @@ a:focus {
   width: 100%;
 }
 
+.projects_section .box .social_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 225px;
+  padding: 12px 45px;
+  background-color: #ffffff;
+  border-radius: 50px;
+  margin-top: -25px;
+}
 
 .contact_section {
   position: relative;
@@ -421,6 +425,9 @@ a:focus {
   width: 100%;
 }
 
+.contact_section .form_container {
+  padding: 45px 0 45px 15px;
+}
 
 .contact_section input {
   width: 100%;
@@ -432,7 +439,35 @@ a:focus {
   padding: 12px;
 }
 
+.contact_section input::-webkit-input-placeholder {
+  color: #2a2a2c;
+}
 
+.contact_section input:-ms-input-placeholder {
+  color: #2a2a2c;
+}
+
+.contact_section input::-ms-input-placeholder {
+  color: #2a2a2c;
+}
+
+.contact_section input::placeholder {
+  color: #2a2a2c;
+}
+
+.contact_section input.message-box {
+  padding: 45px 12px;
+}
+
+.contact_section button {
+  padding: 10px 65px;
+  outline: none;
+  border: none;
+  color: #ffffff;
+  background: #ff2953;
+  margin: 45px 0 0 auto;
+  text-transform: uppercase;
+}
 
 .info_section {
   background-color: #252233;
